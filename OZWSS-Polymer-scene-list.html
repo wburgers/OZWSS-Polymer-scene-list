@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+
+<link rel="import" href="../OZWSS-Polymer-scene-list-item/OZWSS-Polymer-scene-list-item.html">
+
+<!--
+@element OZWSS-Polymer-scene-list
+@demo demo/index.html
+-->
+
+<dom-module id="OZWSS-Polymer-scene-list">
+	<style>
+		:host {
+			@apply(--layout-horizontal);
+			@apply(--layout-wrap);
+		}
+	</style>
+	<template>
+		<template is="dom-repeat" items="{{Scenes}}">
+			<OZWSS-Polymer-scene-list-item scene={{item}}>
+			</OZWSS-Polymer-scene-list-item>
+		</template>
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is: "OZWSS-Polymer-scene-list",
+		properties: {
+			Scenes: {
+				type: Array,
+				value: function() { return []; },
+			},
+		},
+	});
+</script>
