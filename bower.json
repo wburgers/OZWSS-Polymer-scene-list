@@ -14,7 +14,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~1.1.0",
+    "polymer": "Polymer/polymer#^1.1.0",
 	"OZWSS-Polymer-scene-list-item": "git://github.com/wburgers/OZWSS-Polymer-scene-list-item#master"
   },
   "devDependencies": {
